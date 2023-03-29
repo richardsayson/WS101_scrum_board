@@ -10,7 +10,9 @@ export default function Board(){
                 <div className="relative w-[380px] h-[480px]  bg-blue-200 rounded-lg p-5 border-2 border-blue-300">
                     <form>
                         <h2 className="text-4xl font-bold font-mono text-black-800 text-center mt-5 mb-5">Sign up</h2>
-                    <div className="relative flex flex-col mb-10">
+
+                    <div className=" font-mono relative flex flex-col mb-2">
+                        <p className='font-mono text-black-900'>Name*</p>
                         <input type="text" 
                             id="name" 
                             placeholder="Enter your name"
@@ -24,7 +26,8 @@ export default function Board(){
                         text-gray-700 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
                         peer-placeholder-shown:text-gray-900 peer-focus:scale-75 peer-focus:-translate-y-8">Name</label>
                     </div>
-                    <div className="relative flex flex-col mb-2 mt-8">
+                    <div className="relative flex flex-col mb-2 mt-4">
+                    <p className='font-mono text-black-900'>Email*</p>
                         <input type="email" 
                             id="email" 
                             placeholder="Enter your email"
@@ -38,7 +41,8 @@ export default function Board(){
                         text-gray-700 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
                         peer-placeholder-shown:text-gray-900 peer-focus:scale-75 peer-focus:-translate-y-8">Email</label>
                     </div>
-                    <div className="relative flex flex-col mb-2 mt-8">
+                    <div className="relative flex flex-col mb-2 mt-4    ">
+                    <p className='font-mono text-black-900'>Password*</p>
                         <input type="password" 
                             id="password" 
                             placeholder="Create a Password "
@@ -57,7 +61,7 @@ export default function Board(){
                         className="py-3 mt-5 font-mono text-gray-400 bg-blue-900 w-full rounded-lg hover:bg-blue-700
                         hover-scale-105 duration-300">Register</button>
                     
-                    <h2 className="flex justify-center items-center mt-10 text-sm text-gray-900 font-mono">
+                    <h2 className="flex justify-center items-center mt-5 text-sm text-gray-900 font-mono">
                         Already have an account? 
                         <Link 
                         className="text-blue-900 pl-1" 

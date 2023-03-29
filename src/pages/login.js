@@ -34,10 +34,11 @@ export default function Login(){
                 <div className="flex justify-center items-center pb-5">
                     <h1 className="font-mono font-bold text-6xl text-black-800">Scrum Board</h1>
                 </div>
-                <div className="relative w-[400px] h-[400px] bg-blue-200 rounded-lg p-5 border-2 border-blue-300">
+                <div className="relative w-[400px] h-[420px] bg-blue-200 rounded-lg p-5 border-2 border-blue-300">
                 <form onSubmit={handleSubmit}>
-                    <h2 className="text-4xl font-bold font-mono text-black-800 text-center mt-5 mb-5">Log In</h2>
+                    <h2 className="text-4xl font-bold font-mono text-black-800 text-center mb-5">Log In</h2>
                     <div className="relative flex flex-col mb-2">
+                    <p className='font-mono text-black-900'>Username*</p>
                         <input type="text" 
                             id="username"
                             placeholder="Input Username"
@@ -55,10 +56,11 @@ export default function Login(){
                         peer-placeholder-shown:text-gray-900 peer-focus:scale-75 peer-focus:-translate-y-8">Username</label>
                     </div>
                     <div>
-                        {errors.username && (<p className="text-red-500 text-sm font-mono mt-1">{errors.username}</p>)}
+                        {errors.username && (<p className="text-red-500 text-sm font-mono">{errors.username}</p>)}
                     </div>
                     
                     <div className="relative flex flex-col mt-5 mb-2">
+                    <p className='font-mono text-black-900'>Password*</p>
                         <input type="password"
                             id="password"
                             placeholder="Input Password"
@@ -76,7 +78,7 @@ export default function Login(){
                         peer-placeholder-shown:text-gray-900 peer-focus:scale-75 peer-focus:-translate-y-8">Password</label>
                     </div>
                     <div>
-                        {errors.password && (<p className="text-red-500 text-sm font-mono mt-1">{errors.password}</p>)}
+                        {errors.password && (<p className="text-red-500 text-sm font-mono ">{errors.password}</p>)}
                     </div>
                     
                     <button type="submit"
